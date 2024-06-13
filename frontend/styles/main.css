@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    header .top-bar .logo {
+        display: flex;
+        align-items: center;
+    }
+
+        header .top-bar .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+    header .top-bar .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+header .main-nav {
+    background-color: #f90;
+}
+
+    header .main-nav ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+        header .main-nav ul li {
+            margin: 0 15px;
+        }
+
+            header .main-nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                padding: 15px 0;
+                display: block;
+                font-weight: bold;
+            }
+
+.bike-catalog {
+    padding: 20px;
+    text-align: center;
+}
+
+    .bike-catalog h2 {
+        color: #f90;
+        font-size: 24px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #f90;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+
+.bike-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bike-item {
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+}
+
+.bike-image {
+    position: relative;
+}
+
+    .bike-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .bike-image .badge {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: #00aaff;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
+.bike-item h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.bike-item .availability {
+    color: green;
+}
+
+.bike-item .price {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.bike-item .monthly-payment {
+    color: #f90;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+.footer-content {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 768px) {
+    .header .top-bar, .header .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .main-nav ul {
+        flex-wrap: wrap;
+    }
+
+    .bike-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bike-item {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header .top-bar {
+        padding: 10px 10px;
+    }
+
+    .header .main-nav ul li {
+        margin: 5px 0;
+    }
+
+    .bike-catalog h2 {
+        font-size: 20px;
+    }
+
+    .bike-item h3 {
+        font-size: 14px;
+    }
+
+    .bike-item .price, .bike-item .monthly-payment {
+        font-size: 16px;
+    }
+}

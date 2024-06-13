@@ -1,0 +1,6 @@
+/* Можно использовать main.css и добавить специфические стили для about.html */
+@import url('main.css');
+
+main {
+    background-color: #f4f4f4;
+    padding: 20px;
